@@ -231,7 +231,7 @@ _.extend(View.prototype, Events, {
                         if (attr === 'class') {
                             classList = classes(el);
                             if (isBool) {
-                                classList.toggle(propertyName, newVal);
+                                classList.toggle(name || propertyName, newVal);
                             } else {
                                 prevVal = model.previous(propertyName);
                                 if (prevVal) classList.remove(prevVal);
